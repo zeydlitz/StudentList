@@ -7,7 +7,10 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Resources;
+<<<<<<< HEAD
 using System.Runtime.InteropServices;
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +18,10 @@ using System.Xml;
 using System.Xml.Linq;
 using WindowsFormsApp3;
 using Npgsql;
+<<<<<<< HEAD
 using NpgsqlTypes;
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
 
 namespace WindowsFormsApp3
 {
@@ -23,15 +29,21 @@ namespace WindowsFormsApp3
     public partial class Form1 : Form
     {
         private List<Student> StudentList;
+<<<<<<< HEAD
         private string Filename;
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
 
         public Form1()
         {
             InitializeComponent();
             this.Text = "Список студентов";
             this.StudentList = new List<Student>(5);
+<<<<<<< HEAD
             saveToolStripMenuItem.Enabled = false;
             Filename = null;
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
         }
 
         private void Input_Click(object sender, EventArgs e)
@@ -50,19 +62,28 @@ namespace WindowsFormsApp3
             {
                 MessageBox.Show("limit was reached ");
             }
+<<<<<<< HEAD
             
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             int index;
             try
             { index = this.dataGridView1.CurrentCell.RowIndex; 
                 if (index >= 0)
+=======
+            int index = this.dataGridView1.CurrentCell.RowIndex;
+            if (index >= 0)
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
             {
                 this.StudentList.RemoveAt(index);
                 this.dataGridView1.Rows.RemoveAt(index);
             }
+<<<<<<< HEAD
             }
             catch (NullReferenceException)
             {
@@ -80,6 +101,22 @@ namespace WindowsFormsApp3
             {
                 index= this.dataGridView1.CurrentCell.RowIndex;
                 //if (index >= 0)
+=======
+
+            //int ntx = this.listBox1.SelectedIndex;
+                //if (ntx >= 0)
+                //{
+                //    this.StudentList.RemoveAt(ntx);
+                //    this.listBox1.Items.RemoveAt(ntx);
+                //}
+            }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int index =this.dataGridView1.CurrentCell.RowIndex;
+            if (index >= 0)
+            {
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
                 SwmX form = new SwmX(this.StudentList[index]);
                 form.ShowDialog();
                 DataGridViewRow row = dataGridView1.Rows[index];
@@ -88,6 +125,7 @@ namespace WindowsFormsApp3
                 row.Cells[2].Value = this.StudentList[index].DATE;
                 row.Cells[4].Value = this.StudentList[index].PASSPORT;
                 row.Cells[3].Value = this.StudentList[index].Univer;
+<<<<<<< HEAD
 
             }
             catch (NullReferenceException)
@@ -101,6 +139,34 @@ namespace WindowsFormsApp3
         }
 
 
+=======
+            }
+            //int ntx = this.listBox1.SelectedIndex;
+            //if (ntx >= 0)
+            //{
+            //    SwmX form = new SwmX(this.StudentList[ntx]);
+            //    form.ShowDialog();
+            //    listBox1.Items[ntx] = this.StudentList[ntx].to_ListItem();
+            //}
+        }
+
+        //private static async Task ConnectWithDB()
+        //{
+        //    string connectionString = @"Data Source=DESKTOP-ET4O128\SQLEXPRESS;Initial Catalog=BD_for_c#;Integrated Security=True";
+        //    //string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        //    string sqlExpression = "INSERT INTO STUDENT (STUD_ID, Surname,Name,Passport,AD_ID,UN_AD_ID) VALUES (18,'lol','Net','123213',2,2)";
+        //    using (SqlConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        await connection.OpenAsync();
+
+
+        //        SqlCommand command = new SqlCommand(sqlExpression, connection);
+        //        int number = command.ExecuteNonQuery();
+        //        MessageBox.Show($"Connecting is on{number}", "DATABASE", MessageBoxButtons.OK);
+        //    }
+        //    MessageBox.Show("Connecting is off", "DATABASE", MessageBoxButtons.OK);
+        //}
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
@@ -112,7 +178,10 @@ namespace WindowsFormsApp3
                 XElement SL=new XElement("StudentsList");
                 for (Int16 i = 0; i < this.StudentList.Count; i++)
                 {
+<<<<<<< HEAD
                     
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
                     XElement Student_el= new XElement("Student");
                     XAttribute NS=new XAttribute("Number",(i+1).ToString());
                     XElement Person_el=new XElement("Person");
@@ -162,12 +231,16 @@ namespace WindowsFormsApp3
             }
 
             this.Text = sfd.FileName;
+<<<<<<< HEAD
             saveToolStripMenuItem.Enabled = true;
+=======
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
 
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             SaveFileDialog sfd = new SaveFileDialog();
             if (Filename != null)
             {
@@ -230,6 +303,10 @@ namespace WindowsFormsApp3
         }
     
         
+=======
+
+        }
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -239,8 +316,12 @@ namespace WindowsFormsApp3
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 StudentList.Clear();
+<<<<<<< HEAD
                 //dataGridView1.DataSource = null;
                 //dataGridView1.Rows.Clear();
+=======
+                this.listBox1.Items.Clear();
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
                 XDocument xdoc = XDocument.Load(ofd.FileName);
                 foreach (XElement stud in xdoc.Element("StudentsList").Elements("Student"))
                 {
@@ -269,11 +350,18 @@ namespace WindowsFormsApp3
                     
                     Console.WriteLine();
                     this.StudentList.Add(st);
+<<<<<<< HEAD
                     dataGridView1.Rows.Add(st.SURNAME, st.NAME, st.DATE, st.PASSPORT, st.Univer);
                     //this.listBox1.Items.Add(st.to_ListItem());
                 }
             }
             
+=======
+                    this.listBox1.Items.Add(st.to_ListItem());
+                }
+            }
+
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
         }
 
         private void getDataToolStripMenuItem_Click(object sender, EventArgs e)
@@ -291,6 +379,7 @@ namespace WindowsFormsApp3
 
         private void save_button_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string connectionString = @"server=127.0.0.1;database=test_db;port=5432;uid=postgres;pwd=258852";
             string sqlExpression = "pox";
             int index; 
@@ -391,6 +480,86 @@ namespace WindowsFormsApp3
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(1);
+=======
+            
+            int index = this.dataGridView1.CurrentCell.RowIndex; 
+            string connectionString = @"server=127.0.0.1;database=test_db;port=5432;uid=postgres;pwd=258852";
+            string sql = "SELECT * FROM Users";
+            string sqlExpression = "pox";
+            if (index >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[index];
+
+
+
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    
+
+                    connection.Open();
+                    NpgsqlCommand command = new NpgsqlCommand(sqlExpression, connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    NpgsqlParameter nameParam = new NpgsqlParameter
+                    {
+                        ParameterName = "@name",
+                        Value = row.Cells[1].Value
+                    };
+                    // добавляем параметр
+                    command.Parameters.Add(nameParam);
+                    // параметр для ввода возраста
+                    NpgsqlParameter Sur = new NpgsqlParameter
+                    {
+                        ParameterName = "@surname",
+                        Value = row.Cells[0].Value
+                    };
+                    command.Parameters.Add(Sur);
+                    NpgsqlParameter Birt = new NpgsqlParameter
+                    {
+                        ParameterName = "@birthday",
+                        Value = row.Cells[2].Value
+                    };
+                    command.Parameters.Add(Birt);
+                    NpgsqlParameter pass = new NpgsqlParameter
+                    {
+                        ParameterName = "@pass",
+                        Value = row.Cells[3].Value
+                    };
+                    command.Parameters.Add(pass);
+                    NpgsqlParameter univer = new NpgsqlParameter
+                    {
+                        ParameterName = "@univer",
+                        Value = row.Cells[4].Value
+                    };
+                    command.Parameters.Add(univer);
+                    //SqlParameter ad = new SqlParameter
+                    //{
+                    //    ParameterName = "@ad",
+                    //    Value = 1
+                    //};
+                    //command.Parameters.Add(ad);
+                    //SqlParameter ud = new SqlParameter
+                    //{
+                    //    ParameterName = "@univer",
+                    //    Value = 1
+                    //};
+                    //command.Parameters.Add(ud);
+                    //SqlDataAdapter adapter=new SqlDataAdapter();
+                    //adapter = new SqlDataAdapter(sql, connection);
+                    //commandBuilder = new SqlCommandBuilder(adapter);
+                    //adapter.InsertCommand = new SqlCommand("sp_CreateUser", connection);
+                    //adapter.InsertCommand.CommandType = CommandType.StoredProcedure;
+                    //adapter.InsertCommand.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar, 50, "Name"));
+                    //adapter.InsertCommand.Parameters.Add(new SqlParameter("@age", SqlDbType.Int, 0, "Age"));
+
+                    //SqlParameter parameter = adapter.InsertCommand.Parameters.Add("@Id", SqlDbType.Int, 0, "Id");
+                    //parameter.Direction = ParameterDirection.Output;
+
+                    //adapter.Update(ds);
+                    command.ExecuteScalar();
+                }
+            }
+
+>>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
         }
     }
 
