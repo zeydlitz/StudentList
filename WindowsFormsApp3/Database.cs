@@ -21,20 +21,12 @@ namespace WindowsFormsApp3
 
         private void Database_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             // TODO: This line of code loads data into the 'test_dbDataSet2.address' table. You can move, or remove it, as needed.
             this.addressTableAdapter.Fill(this.test_dbDataSet2.address);
             // TODO: This line of code loads data into the 'test_dbDataSet2.student' table. You can move, or remove it, as needed.
             this.studentTableAdapter.Fill(this.test_dbDataSet2.student);
             // TODO: This line of code loads data into the 'test_dbDataSet2.address' table. You can move, or remove it, as needed.
            //// TODO: This line of code loads data into the '_BD_for_c_DataSet3.ADDRESS' table. You can move, or remove it, as needed.
-=======
-            // TODO: This line of code loads data into the 'test_dbDataSet1.ADDRESS' table. You can move, or remove it, as needed.
-            this.aDDRESSTableAdapter1.Fill(this.test_dbDataSet1.ADDRESS);
-            // TODO: This line of code loads data into the 'test_dbDataSet1.STUDENT' table. You can move, or remove it, as needed.
-            this.sTUDENTTableAdapter3.Fill(this.test_dbDataSet1.STUDENT);
-            //// TODO: This line of code loads data into the '_BD_for_c_DataSet3.ADDRESS' table. You can move, or remove it, as needed.
->>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
             //this.aDDRESSTableAdapter.Fill(this._BD_for_c_DataSet3.ADDRESS);
             //// TODO: This line of code loads data into the '_BD_for_c_DataSet1.STUDENT' table. You can move, or remove it, as needed.
             //this.sTUDENTTableAdapter2.Fill(this._BD_for_c_DataSet1.STUDENT);
@@ -52,16 +44,11 @@ namespace WindowsFormsApp3
 
                 for (int i = 0; i < selectedRowCount; i++)
                 {
-<<<<<<< HEAD
                     
-=======
-
->>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
 
                     int index = int.Parse(dataGridView1.SelectedRows[i].Index.ToString());
                     DataGridViewRow row = dataGridView1.Rows[index];
                     Student st = new Student();
-<<<<<<< HEAD
                     st.SURNAME = row.Cells[1].Value.ToString();
                     st.NAME = row.Cells[2].Value.ToString();
                     st.PASSPORT = row.Cells[4].Value.ToString();
@@ -69,15 +56,6 @@ namespace WindowsFormsApp3
                     st.Univer = row.Cells[5].Value.ToString();
                     int k = int.Parse(row.Cells[6].Value.ToString());
                     int j = int.Parse(row.Cells[7].Value.ToString());
-=======
-                    st.SURNAME = row.Cells[0].Value.ToString();
-                    st.NAME = row.Cells[1].Value.ToString();
-                    st.PASSPORT = row.Cells[3].Value.ToString();
-                    st.DATE = DateTime.Parse(row.Cells[2].Value.ToString());
-                    st.Univer = row.Cells[4].Value.ToString();
-                    int k = int.Parse(row.Cells[5].Value.ToString());
-                    int j = int.Parse(row.Cells[6].Value.ToString());
->>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
                     DataGridViewRow row1 = dataGridView2.Rows[k];
                     DataGridViewRow row2 = dataGridView2.Rows[j];
                     Adress_c one=new Adress_c();

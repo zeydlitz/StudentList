@@ -32,7 +32,6 @@ C:\Users\MiAir\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\System.T
 C:\Users\MiAir\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\MiAir\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\System.ValueTuple.xml
 C:\Users\MiAir\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete
-<<<<<<< HEAD
 D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
 D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
 D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
@@ -67,5 +66,3 @@ D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.cs
 D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete
 D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 D:\programmig\C#\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
-=======
->>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3

@@ -137,14 +137,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>test_dbDataSet1.xsd</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="test_dbDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>test_dbDataSet21.xsd</DependentUpon>
     </Compile>
-=======
->>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
     <Compile Include="_BD_for_c_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -228,7 +225,6 @@
     <None Include="test_dbDataSet1.xss">
       <DependentUpon>test_dbDataSet1.xsd</DependentUpon>
     </None>
-<<<<<<< HEAD
     <None Include="test_dbDataSet21.xsc">
       <DependentUpon>test_dbDataSet21.xsd</DependentUpon>
     </None>
@@ -240,8 +236,6 @@
     <None Include="test_dbDataSet21.xss">
       <DependentUpon>test_dbDataSet21.xsd</DependentUpon>
     </None>
-=======
->>>>>>> 866c89f9bc3a53ae66efbeb7e7d70823e0d458f3
     <None Include="_BD_for_c_DataSet.xsc">
       <DependentUpon>_BD_for_c_DataSet.xsd</DependentUpon>
     </None>
