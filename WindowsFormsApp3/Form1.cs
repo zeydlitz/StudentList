@@ -124,9 +124,9 @@ namespace WindowsFormsApp3
                     if (this.StudentList[i].adr != null)
                     {
                         
-                        XElement Country=new XElement("Country", this.StudentList[i].adr.A1);
-                        XElement Loc = new XElement("Locality", this.StudentList[i].adr.A2);
-                        XElement Street = new XElement("Street", this.StudentList[i].adr.A3);
+                        XElement Country=new XElement("Country", this.StudentList[i].adr.COUNTRY);
+                        XElement Loc = new XElement("Locality", this.StudentList[i].adr.CITY);
+                        XElement Street = new XElement("Street", this.StudentList[i].adr.STREET);
                         adr.Add(Country);
                         adr.Add(Loc);
                         adr.Add(Street);
@@ -139,9 +139,9 @@ namespace WindowsFormsApp3
                     if (this.StudentList[i].un_adr != null)
                     {
                         
-                        XElement Country = new XElement("Country", this.StudentList[i].un_adr.A1);
-                        XElement Loc = new XElement("Locality", this.StudentList[i].un_adr.A2);
-                        XElement Street = new XElement("Street", this.StudentList[i].un_adr.A3);
+                        XElement Country = new XElement("Country", this.StudentList[i].un_adr.COUNTRY);
+                        XElement Loc = new XElement("Locality", this.StudentList[i].un_adr.CITY);
+                        XElement Street = new XElement("Street", this.StudentList[i].un_adr.STREET);
                         un_adr.Add(Country);
                         un_adr.Add(Loc);
                         un_adr.Add(Street);
@@ -188,9 +188,9 @@ namespace WindowsFormsApp3
                     if (this.StudentList[i].adr != null)
                     {
 
-                        XElement Country = new XElement("Country", this.StudentList[i].adr.A1);
-                        XElement Loc = new XElement("Locality", this.StudentList[i].adr.A2);
-                        XElement Street = new XElement("Street", this.StudentList[i].adr.A3);
+                        XElement Country = new XElement("Country", this.StudentList[i].adr.COUNTRY);
+                        XElement Loc = new XElement("Locality", this.StudentList[i].adr.CITY);
+                        XElement Street = new XElement("Street", this.StudentList[i].adr.STREET);
                         adr.Add(Country);
                         adr.Add(Loc);
                         adr.Add(Street);
@@ -204,9 +204,9 @@ namespace WindowsFormsApp3
                     if (this.StudentList[i].un_adr != null)
                     {
 
-                        XElement Country = new XElement("Country", this.StudentList[i].un_adr.A1);
-                        XElement Loc = new XElement("Locality", this.StudentList[i].un_adr.A2);
-                        XElement Street = new XElement("Street", this.StudentList[i].un_adr.A3);
+                        XElement Country = new XElement("Country", this.StudentList[i].un_adr.COUNTRY);
+                        XElement Loc = new XElement("Locality", this.StudentList[i].un_adr.CITY);
+                        XElement Street = new XElement("Street", this.StudentList[i].un_adr.STREET);
                         un_adr.Add(Country);
                         un_adr.Add(Loc);
                         un_adr.Add(Street);
@@ -414,7 +414,7 @@ namespace WindowsFormsApp3
         }
     }
 
-    class Dbx : Database
+    class Dbx : database
     {
         public Dbx(List<Student> lol) : base(lol)
         {

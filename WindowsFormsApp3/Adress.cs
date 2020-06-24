@@ -23,17 +23,17 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
             this.ad = ad;
-            this.Country.Text = this.ad.A1;
-            this.Locality.Text = this.ad.A2;
-            this.Street.Text = this.ad.A3;
+            this.Country.Text = this.ad.COUNTRY;
+            this.Locality.Text = this.ad.CITY;
+            this.Street.Text = this.ad.STREET;
 
         }
 
         private void Input_Click(object sender, EventArgs e)
         {
-            this.ad.A1 = this.Country.Text;
-            this.ad.A2 = this.Locality.Text;
-            this.ad.A3 = this.Street.Text;
+            this.ad.COUNTRY = this.Country.Text;
+            this.ad.CITY = this.Locality.Text;
+            this.ad.STREET = this.Street.Text;
             this.Close();
         }
     }

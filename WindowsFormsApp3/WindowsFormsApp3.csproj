@@ -101,22 +101,17 @@
       <DependentUpon>Adress.cs</DependentUpon>
     </Compile>
     <Compile Include="Adress_c.cs" />
-    <Compile Include="DataClasses1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database.cs">
+    <Compile Include="database.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Database.Designer.cs">
-      <DependentUpon>Database.cs</DependentUpon>
+    <Compile Include="database.Designer.cs">
+      <DependentUpon>database.cs</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Swm.cs">
@@ -132,41 +127,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>test_dbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="test_dbDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>test_dbDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="test_dbDataSet21.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>test_dbDataSet21.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_BD_for_c_DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_BD_for_c_DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_BD_for_c_DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_BD_for_c_DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_BD_for_c_DataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_BD_for_c_DataSet3.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Adress.resx">
       <DependentUpon>Adress.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Database.resx">
-      <DependentUpon>Database.cs</DependentUpon>
+    <EmbeddedResource Include="database.resx">
+      <DependentUpon>database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -183,16 +148,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="App1.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="DataClasses1.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataClasses1.dbml.layout">
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </None>
+    <None Include="ClassDiagram3.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -213,72 +169,6 @@
     </None>
     <None Include="test_dbDataSet.xss">
       <DependentUpon>test_dbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="test_dbDataSet1.xsc">
-      <DependentUpon>test_dbDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="test_dbDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>test_dbDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="test_dbDataSet1.xss">
-      <DependentUpon>test_dbDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="test_dbDataSet21.xsc">
-      <DependentUpon>test_dbDataSet21.xsd</DependentUpon>
-    </None>
-    <None Include="test_dbDataSet21.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>test_dbDataSet21.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="test_dbDataSet21.xss">
-      <DependentUpon>test_dbDataSet21.xsd</DependentUpon>
-    </None>
-    <None Include="_BD_for_c_DataSet.xsc">
-      <DependentUpon>_BD_for_c_DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_BD_for_c_DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_BD_for_c_DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_BD_for_c_DataSet.xss">
-      <DependentUpon>_BD_for_c_DataSet.xsd</DependentUpon>
-    </None>
-    <None Include=".xsc">
-      <DependentUpon>.xsd</DependentUpon>
-    </None>
-    <None Include=".xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include=".xss">
-      <DependentUpon>.xsd</DependentUpon>
-    </None>
-    <None Include="_BD_for_c_DataSet1.xsc">
-      <DependentUpon>_BD_for_c_DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="_BD_for_c_DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_BD_for_c_DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_BD_for_c_DataSet1.xss">
-      <DependentUpon>_BD_for_c_DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="_BD_for_c_DataSet3.xsc">
-      <DependentUpon>_BD_for_c_DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="_BD_for_c_DataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_BD_for_c_DataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_BD_for_c_DataSet3.xss">
-      <DependentUpon>_BD_for_c_DataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

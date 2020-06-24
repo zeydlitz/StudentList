@@ -8,36 +8,36 @@ namespace WindowsFormsApp3
 {
     public class Adress_c
     {
-        private String a1;
-        private String a2;
-        private String a3;
-        public String A1
+        private String Country;
+        private String City;
+        private String Street;
+        public String COUNTRY
         {
-            get { return a1; }
-            set { a1 = value; }
+            get { return Country; }
+            set { Country = value; }
         }
-        public String A2 {
-            get { return a2; }
-            set { a2 = value; }
+        public String CITY {
+            get { return City; }
+            set { City = value; }
         }
-        public String A3
+        public String STREET
         {
-            get { return a3; }
-            set { a3 = value; }
+            get { return Street; }
+            set { Street = value; }
         }
 
         public Adress_c()
         {
-            a1 = "";
-            a2 = "";
-            a3 = "";
+            Country = "";
+            City = "";
+            Street = "";
         }
 
-        public Adress_c(String a1,String a2,String a3)
+        public Adress_c(String country,String city,String street)
         {
-            A1 = a1;
-            A2 = a2;
-            A3 = a3;
+            COUNTRY = country;
+            CITY = city;
+            STREET = street;
         }
 
     }
